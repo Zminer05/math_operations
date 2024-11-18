@@ -1,7 +1,7 @@
 # math_ops.py
 
 def divide_numbers(a, b):
-    """Divides two numbers and returns the result."""
+    """Divides two numbers and returns the result or handles division by zero."""
     if b == 0:
         print("Cannot divide by 0")
         return None
@@ -17,6 +17,6 @@ if __name__ == "__main__":
     result = divide_numbers(x, y)
     if result is not None:
         print(f"The result of division is: {result}")
-    
+        
     product = multiply_numbers(x, y)
     print(f"The result of multiplication is: {product}")
